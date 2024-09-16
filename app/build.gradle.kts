@@ -27,6 +27,7 @@ android {
                 storePassword = keystoreProperties["storePassword"] as String
                 keyAlias = keystoreProperties["keyAlias"] as String
                 keyPassword = keystoreProperties["keyPassword"] as String
+                enableV4Signing = true
             }
 
             create("play") {
@@ -40,7 +41,7 @@ android {
 
     compileSdk = 34
     buildToolsVersion = "35.0.0"
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "27.1.12297006"
 
     namespace = "app.grapheneos.camera"
 
